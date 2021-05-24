@@ -54,7 +54,7 @@ const SmallList = ({ classes, titleSection, linkSection }) => {
                             <CardList
                                 thumbnail={data.thumbnail}
                                 title={data.title}
-                                linkDetail={`/manga/${data.id}/${data.title.replace(/ /g, '-')}`}
+                                linkDetail={`/manga/detail/${data.id}/${data.title.replace(/ /g, '-')}`}
                                 listCategory={data.listCategory}
                                 listInfo={data.listInfo}
                             />
