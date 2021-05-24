@@ -11,7 +11,7 @@ const ArchiveList = ({ classes }) => {
         title: 'One Piece',
         thumbnail: '/cover/one-piece.png',
         listCategory: [{ link: '#', text: 'Aksi' }, { link: '#', text: 'Petualangan' }],
-        listInfo: ['1008 bab', 'bhs indonesia', 'Eiichiro Oda', '22 Juli 1997 - sekarang', 'Shueisha', 'Shōnen']
+        listInfo: ['1008 bab', 'bhs indonesia']
     },{
         id: 2,
         featured: true,
