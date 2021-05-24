@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button__custom {
+        @apply bg-purple-400 hover:bg-purple-500 px-5 py-3 text-white rounded-sm duration-500 outline-none;
+    }
+
+    .input__custom {
+        @apply border border-gray-300 outline-none bg-white px-5 py-3 text-gray-500 rounded-sm;
+    }
+
+    .input__custom-search {
+        @apply rounded-none border-white text-white;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    .search__wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar__ul {
+        @apply list-none m-0 p-8 flex flex-col top-full absolute left-0 right-0 bg-purple-300 md:p-0 md:top-unset md:right-unset md:left-unset md:relative md:bg-transparent md:flex-row md:flex-nowrap md:items-center;
+    }
+
+    .navbar__toggle-active {
+        @apply block md:flex;
+    }
+
+    .navbar__toggle-inactive {
+        @apply hidden md:flex;
+    }
+
+    .title__section-wrap {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        @apply border-purple-400;
+    }
+
+    .list__manga-information li {
+        @apply py-3 border-purple-400;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    .table__list-chapter tbody tr {
+        @apply border-purple-400;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+}
+
+@layer utilities {
+    .top-unset {
+        top: unset;
+    }
+
+    .bottom-unset {
+        bottom: unset;
+    }
+
+    .left-unset {
+        left: unset;
+    }
+
+    .right-unset {
+        right: unset;
+    }
+
+    @variants responsive {
+        .top-unset {
+            top: unset;
+        }
+
+        .bottom-unset {
+            bottom: unset;
+        }
+
+        .left-unset {
+            left: unset;
+        }
+
+        .right-unset {
+            right: unset;
+        }
+    }
+
+    .bg-black-transparent {
+        background-color: rgba(00, 00, 00, 0.5);
+    }
+}
